@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Talk</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+     <div class="overlay" id="overlay" onclick="toggleProfile()"></div>
+    
+    <header>
+        <div class="logo-container">
+            <h1>Start</h1>
+            <h2>Talk</h2>
+        </div>
+        <div>
+            <button class="profile-btn" onclick="toggleProfile()">
+                <i class='bx bxs-user-circle'></i>
+            </button>
+        </div>
+    </header>
+    
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li>
+                <div class="profile">
+                    <h3><span><i class='bx bxs-user-circle'></i></span>Sanjana M Patil</h3>
+                    <p><a href="">Edit Profile</a></p>
+                </div>
+            </li>
+       
+            <li><i class='bx bxs-check-shield'></i><a href="" class="Privacy">Privacy Policy</a></li>
+            <li><i class='bx bxs-log-out'></i>Log Out</li>
+        </ul>
+    </div>
+    <section class="front">
+        <div class="">
+            <img src="WhatsApp Image 2025-05-12 at 13.48.51_7bf04f0d.jpg" alt="">
+        </div>
+        <div class="">
+            <h2>Practice English with Random Learners!</h2>
+            <p>🗣  Improve speaking Skills..</p>
+            <p>👥 Meet new people</p>
+            <p>🕑 Learn Anytime</p>
+        </div>
+
+
+    </section>
+
+    <div class="selecting" id="selecting">
+        <button onclick="showCall()" class="but">Beginner</button>
+        <button onclick="showCall()" class="but">Intermediate</button>
+        <button onclick="showCall()" class="but">Advanced</button>
+
+    </div>
+    
+        <div class="container">
+            <h1 id="selector"></h1>
+             <h2>Unknown</h2>
+      <p>00.00</p>
+        <img src="ChatGPT Image May 12, 2025, 06_22_23 PM.png" alt="">
+          <div class="call-buttons">
+                <div class="call-button mic-button" onclick="changeMicrophone()" ondblclick="changeAgain()" id="mic">
+                    <i class='bx bxs-microphone'></i>
+                </div>
+                
+                <div class="call-button speakers-button" onclick="changeSpeakers()" id="speaker" ondblclick="changeAgainn()">
+                    <i class='bx bxs-volume-full'></i>
+                </div>
+                
+                <div class="call-button end-call-button" onclick="openFeedback()">
+                    <i class='bx bx-phone-off'></i>
+                </div>
+            </div>
+        
+    </div>
+
+    <div class="feedback" id="feedback">
+        <h2>Feedback</h2>
+        <p>How was your experience?</p>
+        <div class="feedback-buttons">
+            <button class="feedback-button">Good</button>
+            <button class="feedback-button">Bad</button>
+            <textarea name="" id="" placeholder="Any issues You found"></textarea>
+            <button class="feedback-button" onclick="change()">Submit</button>
+        </div>
+    </div>
+    <button class="startCall" onclick="showSelect()">Call<i class='bx bxs-phone-outgoing'  ></i> </button>
+   <script src="script.js"></script>
+</body>
+</html>
